@@ -1821,12 +1821,12 @@ button {
    ========================================================================== */
 .floating-whatsapp {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
+  bottom: 62px;
+  right: 10px;
   z-index: 95;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
+  width: 47px;
+  height: 47px;
+  border-radius: 64%;
   background-color: #25D366;
   color: #FFFFFF;
   display: flex;
