@@ -1,5 +1,5 @@
 /**
- * Nirveen Interior Studio - Main Client-Side JavaScript
+ * Naveen Interior Studio - Main Client-Side JavaScript
  * Chennai, Tamil Nadu, India
  */
 
@@ -85,11 +85,11 @@ function initEnquiryModal() {
   });
 
   // Automatically show on initial visit if not shown in current tab session
-  const hasShown = sessionStorage.getItem('nirveen_popup_seen');
+  const hasShown = sessionStorage.getItem('naveen_popup_seen');
   if (!hasShown) {
     setTimeout(() => {
       openModal();
-      sessionStorage.setItem('nirveen_popup_seen', 'true');
+      sessionStorage.setItem('naveen_popup_seen', 'true');
     }, 1100);
   }
 }
@@ -186,7 +186,7 @@ const blogArticles = {
       <p>Modern homes require dedicated 16A points for air conditioners, heavy kitchen appliances, and chimney ducting. Map your electrical layout before starting civil or carpentry work.</p>
 
       <h3>5. Turnkey Single-Window Accountability</h3>
-      <p>Managing individual carpenters, electricians, painters, and POP labor separately leads to timeline delays and finger-pointing. A turnkey partner like Nirveen Interior Studio coordinates the entire project under one roof.</p>
+      <p>Managing individual carpenters, electricians, painters, and POP labor separately leads to timeline delays and finger-pointing. A turnkey partner like Naveen Interior Studio coordinates the entire project under one roof.</p>
     `
   },
   2: {
@@ -222,7 +222,7 @@ const blogArticles = {
       <h3>Custom On-Site Carpentry</h3>
       <p>Homes in Chennai frequently have uneven wall angles, protruding structural columns, or unique beam heights. Custom carpentry ensures exact wall-to-wall fitting with zero awkward gaps.</p>
 
-      <h3>The Nirveen Hybrid Advantage</h3>
+      <h3>The Naveen Hybrid Advantage</h3>
       <p>We combine modular precision for high-usage areas (kitchen carcases and drawers) with skilled on-site carpentry for master bedroom wardrobes, fluted wall paneling, and custom prayer units.</p>
     `
   },
@@ -259,7 +259,7 @@ function initBlogReader() {
     if (!article) return;
 
     titleEl.textContent = article.title;
-    metaEl.innerHTML = `<span>${article.category}</span> · <span>${article.date}</span> · <span>Nirveen Interior Studio</span>`;
+    metaEl.innerHTML = `<span>${article.category}</span> · <span>${article.date}</span> · <span>Naveen Interior Studio</span>`;
     bodyEl.innerHTML = article.content;
 
     modal.classList.add('active');
